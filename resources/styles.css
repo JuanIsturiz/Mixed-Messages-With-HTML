@@ -1,0 +1,99 @@
+/* Global stuff */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: black;
+}
+
+/* Background image */
+.background {
+  height: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url(./background.jpg);
+  background-size: cover;
+  filter: blur(6px);
+}
+
+/* Text box */
+.container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 75%;
+  height: auto;
+  top: -75%;
+  left: 12.5%;
+  padding: 1rem;
+  border: 0.15rem solid wheat;
+  border-radius: 2px;
+  color: wheat;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 1rem;
+}
+
+.container .text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.text p:first-child {
+  margin-bottom: 0.25rem;
+}
+
+button {
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: wheat;
+  border: 0.15rem solid wheat;
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
+  border-color: rgb(30, 0, 0);
+  color: rgb(30, 0, 0);
+  background-color: wheat;
+}
+
+/* footer stuff */
+footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: wheat;
+  font-size: 1.25rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+/*@media for phones */
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 90%;
+    left: 5%;
+  }
+  .text {
+    align-self: flex-end;
+    margin-bottom: 100px;
+  }
+  button {
+    font-size: 1.5rem;
+  }
+}
